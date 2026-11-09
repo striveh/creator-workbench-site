@@ -5,6 +5,13 @@
 <description>AI 落地、技术人转型、创作者工作台实验。</description>
 <language>zh-CN</language>
 <item>
+<title>用 AI 写 SQL 的边界：哪些能交给它，哪些必须人审</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-12-09-ai-sql-boundary/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-12-09-ai-sql-boundary/</guid>
+<description>AI 写 SQL 很快，但 SQL 是在真实数据库上执行的语言。红黄绿三级风险 + 一套可执行的人审流程。</description>
+<pubDate>Wed, 09 Dec 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
 <title>用 Python 写一个内容看板：选题、写作、发布一屏看清</title>
 <link>https://striveh.github.io/creator-workbench-site/articles/2026-12-03-python-content-dashboard/index.html</link>
 <guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-12-03-python-content-dashboard/</guid>

@@ -1,5 +1,7 @@
 # 个人品牌站 · 部署说明
 
+**当前线上地址：** https://striveh.github.io/creator-workbench-site/ （GitHub Pages）
+
 ## 方案 A：GitHub Pages（最快）
 
 前提：本机 `gh` 已登录 GitHub（当前已登录账号 `striveh`）。

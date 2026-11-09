@@ -10,6 +10,10 @@
 
 `creator-workbench-site-v0.1.zip` 已包含 `index.html`、assets、downloads 和部署说明，可直接上传 GitHub Pages / Cloudflare Pages。
 
+## 线上地址
+
+https://striveh.github.io/creator-workbench-site/
+
 ## 本地预览
 
 ```bash

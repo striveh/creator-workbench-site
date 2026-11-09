@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>创作者工作台模板 v0.1 · 一个文件夹管理所有内容</title><link rel="stylesheet" href="../assets/product.css"></head><body>
+<nav class="nav"><div class="wrap nav-in"><a class="brand" href="../index.html"><span class="mark"></span>CREATOR WORKBENCH</a><a href="../index.html">← 返回首页</a></div></nav>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">PRODUCT 01 · 内部测试版 · 免费</div>
+<h1>创作者工作台模板 v0.1<br><span>一个文件夹，管理所有内容</span></h1>
+<p class="lead">用文件夹 + 零依赖 Python CLI + 本地看板，把「定位 → 选题 → 素材 → 写作 → 发布 → 复盘」变成一条能每天运转的生产线。复制即可用，不需要数据库、不需要注册账号、不需要联网。</p>
+<div class="pills"><span class="pill">26 个模板文件</span><span class="pill">39 个示例选题</span><span class="pill">4 套模板</span><span class="pill">Python 3.8+</span><span class="pill">本地数据</span></div>
+<a class="download" href="../downloads/creator-workbench-template-v0.1.zip">下载模板 zip（约 68KB）</a>
+</div></header>
+<section class="section"><div class="wrap"><h2>它解决什么问题</h2><div class="grid">
+<div class="card"><div class="num">01</div><h3>内容散落在十个地方</h3><p>选题在备忘录，草稿在桌面，图片在下载目录，发布记录在另一张表。工作台把每篇内容放进一个独立项目文件夹。</p></div>
+<div class="card"><div class="num">02</div><h3>每次写作从零开始</h3><p>选题卡、文章模板、发布检查清单、周复盘模板，把重复动作固定下来，减少每天的临时决策。</p></div>
+<div class="card"><div class="num">03</div><h3>不知道下一步做什么</h3><p>内容只有四种状态：选题、写作、待发布、已发布。打开看板，就知道今天该推进哪一篇。</p></div>
+</div></div></section>
+<section class="section"><div class="wrap"><h2>包含什么</h2><ul class="list"><li><b>workbench/</b>：定位画布、受众画像、个人资产盘点、39 个示例选题、4 套模板、产品路线图、发布记录、日志模板</li><li><b>tools/workbench.py</b>：零依赖 Python CLI，支持 new / list / status / dashboard</li><li><b>dashboard.html</b>：从 content/*/meta.json 自动生成的本地看板</li><li><b>AGENTS.md</b>：给 DSH Agent 的通用运行规则</li><li><b>README + QUICKSTART</b>：5 分钟上手文档</li></ul><img class="img" src="../assets/product-workbench-dashboard.png" alt="创作者工作台看板"></div></section>
+<section class="section"><div class="wrap"><h2>5 分钟开始</h2><div class="code">python3 workbench/tools/workbench.py --help
+python3 workbench/tools/workbench.py list
+python3 workbench/tools/workbench.py new "我的第一篇文章" --slug my-first-article
+python3 workbench/tools/workbench.py dashboard</div></div></section>
+<section class="section"><div class="wrap"><h2>适合谁 / 不适合谁</h2><div class="grid"><div class="card"><h3>适合</h3><ul class="list"><li>想从“学习”转向“产出”的技术人</li><li>习惯文件与命令行的创作者</li><li>需要一鱼多吃的人</li><li>想系统化整理内容工作的人</li></ul></div><div class="card"><h3>不适合</h3><ul class="list"><li>期待自动涨粉/自动变现的人</li><li>完全不愿意用命令行的人</li><li>需要多人协作和云同步的团队</li><li>想直接转售模板的人</li></ul></div></div></div></section>
+<section class="section"><div class="wrap"><h2>v0.1 的限制</h2><p class="note">不包含自动发布、多平台一键分发、多人协作、云同步或账号密钥；看板是本地 HTML；只在 macOS + Python 3.14 做过完整自测。v0.1 为内部测试版，暂不公开销售。</p><a class="download" href="../downloads/creator-workbench-template-v0.1.zip">下载模板 zip</a></div></section>
+<footer class="footer"><div class="wrap">CREATOR WORKBENCH · 2026 · 一个普通技术人的长期实验</div></footer>
+</body></html>

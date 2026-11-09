@@ -27,8 +27,8 @@ python3 -m http.server 8080
 ```
 site/
 ├── index.html       # 单页站
-├── assets/          # 7 篇文章封面
-├── articles/        # 7 篇本地文章预览（站点包内自带）
+├── assets/          # 8 篇文章封面
+├── articles/        # 8 篇本地文章预览（站点包内自带）
 ├── products/        # 3 个产品详情页
 ├── downloads/       # 可下载的 zip / PDF（含服务说明）
 ├── site-cover.png   # 预览截图
@@ -44,7 +44,7 @@ site/
 
 1. 推荐 GitHub Pages / Cloudflare Pages / Vercel 任选一个静态托管；
 2. 上传整个 `site/` 目录即可，`downloads/` 里的两个文件会随站点一起可下载；
-3. 7 个文章卡片已指向 `articles/<slug>/index.html`，站点包自带文章页；正式发布后可以把它们替换成公众号文章链接；
+3. 8 个文章卡片已指向 `articles/<slug>/index.html`，站点包自带文章页；正式发布后可以把它们替换成公众号文章链接；
 4. 如果需要域名，建议使用自己的名字或品牌名，不要用第三方的免费子域名作为长期主站。
 
 ## 注意

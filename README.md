@@ -29,6 +29,7 @@ site/
 ├── index.html       # 单页站
 ├── assets/          # 6 篇文章封面
 ├── articles/        # 6 篇本地文章预览（站点包内自带）
+├── products/        # 3 个产品详情页
 ├── downloads/       # 可下载的 zip / PDF（含服务说明）
 ├── site-cover.png   # 预览截图
 ├── creator-workbench-site-v0.1.zip # 可直接上传静态托管的站点包

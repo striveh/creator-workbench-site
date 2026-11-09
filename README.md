@@ -32,6 +32,9 @@ site/
 ├── products/        # 3 个产品详情页
 ├── downloads/       # 可下载的 zip / PDF（含服务说明）
 ├── site-cover.png   # 预览截图
+├── robots.txt       # 搜索引擎抓取规则
+├── sitemap.xml      # 站点地图
+├── 404.html         # 自定义 404
 ├── creator-workbench-site-v0.1.zip # 可直接上传静态托管的站点包
 └── README.md
 ```

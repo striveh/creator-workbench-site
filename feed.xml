@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>创作者工作台 · 一个 36 岁 Java 工程师的转型实验</title>
+<link>https://striveh.github.io/creator-workbench-site/</link>
+<description>AI 落地、技术人转型、创作者工作台实验。</description>
+<language>zh-CN</language>
+<item>
+<title>如果我把 AI 接进运维值班，我会先做这 3 件事</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-27-ai-ops-oncall/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-27-ai-ops-oncall/</guid>
+<description>不是让 AI 替你点按钮，而是让它先帮你把告警、上下文和历史故障串起来。一个可落地的运维 AI 最小链路。</description>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>看完 30 篇 AI 工具实测，我为什么开始搭自己的内容工作台</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-24-30-tools-workbench/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-24-30-tools-workbench/</guid>
+<description>工具测评解决的是“要不要用”，内容工作台解决的是“怎么持续产出”。翻完自己公众号的 30 篇内容后，我开始给自己搭一条生产线。</description>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>为什么技术人写的文章没人看</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-21-why-tech-articles-flop/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-21-why-tech-articles-flop/</guid>
+<description>信息密度不等于价值。读者点开一篇文章，只关心三个问题：跟我有关吗、凭什么信你、我接下来做什么。</description>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>为什么你的 AI Demo 很惊艳，上线就翻车</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-18-ai-demo-to-production/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-18-ai-demo-to-production/</guid>
+<description>Demo 证明模型能做什么，生产证明系统能不能负责。企业 AI 落地最常见的 7 个断层，以及上线前必须回答的 5 个问题。</description>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>我用一个文件夹，管理所有内容</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-15-creator-workbench-v01/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-15-creator-workbench-v01/</guid>
+<description>一个 Java 工程师的创作者工作台 v0.1：把选题、写作、发布、复盘拆成文件、流程和状态，做成一条每天都能运转的内容生产线。</description>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>技术人做副业，先别急着做课</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-10-side-business-first-article/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-10-side-business-first-article/</guid>
+<description>课程是产品，不是起点。对大多数技术人来说，副业的第一步是写一篇能帮到别人的文章，用它验证需求、建立信任，再决定做什么产品。</description>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+<item>
+<title>36岁，我停止「学习AI」，开始用AI做产品</title>
+<link>https://striveh.github.io/creator-workbench-site/articles/2026-11-09-stop-learning-ai/index.html</link>
+<guid isPermaLink="true">https://striveh.github.io/creator-workbench-site/articles/2026-11-09-stop-learning-ai/</guid>
+<description>不是不学了，而是换一种学法：把AI变成一条能交付价值、能收钱的生产线。这是我给自己搭的创作者工作台，第0天。</description>
+<pubDate>Mon, 09 Nov 2026 08:00:00 +0800</pubDate>
+</item>
+</channel></rss>

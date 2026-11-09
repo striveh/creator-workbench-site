@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="一个 36 岁 Java 工程师的创作者工作台实验：AI 落地、技术人转型、内容与产品。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="创作者工作台 · 一个 36 岁 Java 工程师的转型实验">
+<meta property="og:description" content="不卖成功学，只公开自己正在验证的过程、工具和真实数据。">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>创作者工作台 · 一个 36 岁 Java 工程师的转型实验</title>
+<style>
+  :root{
+    --navy:#0B1B2B; --navy2:#10283D; --orange:#E8863A; --cream:#F4EFE8; --dim:rgba(244,239,232,.6); --line:rgba(244,239,232,.14);
+    --max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--cream);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(11,27,43,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+  .nav-in{height:64px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:.18em;font-weight:700}
+  .mark{width:10px;height:10px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 6px rgba(232,134,58,.12)}
+  .nav-links{display:flex;gap:28px;font-size:13px;color:var(--dim);letter-spacing:.08em}
+  .nav-links a:hover{color:var(--orange)}
+  .hero{position:relative;overflow:hidden;padding:92px 0 76px;border-bottom:1px solid var(--line);background:
+    radial-gradient(900px 500px at 80% 10%,rgba(232,134,58,.16),transparent 60%),
+    radial-gradient(800px 600px at 0% 100%,rgba(45,106,120,.2),transparent 60%)}
+  .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(90deg,#000 0%,#000 60%,transparent 100%)}
+  .hero-in{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:end}
+  .eyebrow{color:var(--orange);font-size:12px;letter-spacing:.26em;font-weight:600}
+  h1{font-size:clamp(36px,4.8vw,58px);line-height:1.16;letter-spacing:-.02em;font-weight:800;margin-top:24px;max-width:760px}
+  h1 span{color:var(--orange)}
+  .lead{margin-top:22px;color:var(--dim);font-size:16px;line-height:1.9;max-width:620px}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;border-radius:10px;font-size:14px;border:1px solid var(--line);color:var(--cream);transition:.2s}
+  .btn:hover{border-color:var(--orange);color:var(--orange)}
+  .btn.primary{background:var(--orange);border-color:var(--orange);color:#1a1208;font-weight:700}
+  .btn.primary:hover{background:#f19a53;color:#1a1208}
+  .hero-stat{border-left:1px solid rgba(232,134,58,.35);padding-left:24px;margin-bottom:8px}
+  .hero-stat .big{font-size:56px;font-weight:800;color:var(--orange);line-height:1}
+  .hero-stat .cap{font-size:12px;color:var(--dim);letter-spacing:.14em;margin-top:10px}
+  .section{padding:72px 0;border-bottom:1px solid var(--line)}
+  .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:28px}
+  .section-title{font-size:22px;font-weight:700;letter-spacing:.02em}
+  .section-note{font-size:12px;color:var(--dim);letter-spacing:.1em}
+  .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .product{border:1px solid var(--line);background:linear-gradient(150deg,rgba(244,239,232,.055),rgba(244,239,232,.015));border-radius:16px;padding:26px;position:relative;overflow:hidden}
+  .product:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--orange)}
+  .product .k{font-size:11px;color:var(--orange);letter-spacing:.2em;font-weight:600}
+  .product h3{font-size:22px;margin:12px 0 10px;line-height:1.35}
+  .product p{font-size:13.5px;line-height:1.85;color:var(--dim);min-height:78px}
+  .product .meta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 20px}
+  .pill{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--dim)}
+  .product .links{display:flex;gap:12px;flex-wrap:wrap;font-size:13px}
+  .product .links a{color:var(--orange);border-bottom:1px solid rgba(232,134,58,.35);padding-bottom:2px}
+  .articles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .article{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:rgba(244,239,232,.03);transition:.2s}
+  .article:hover{border-color:rgba(232,134,58,.5);transform:translateY(-2px)}
+  .article img{display:block;width:100%;aspect-ratio:2.35/1;object-fit:cover;background:#10283D}
+  .article-body{padding:16px 16px 18px}
+  .article .tag{font-size:10px;color:var(--orange);letter-spacing:.16em}
+  .article h3{font-size:15px;line-height:1.5;margin-top:8px;font-weight:600}
+  .article p{font-size:12px;color:var(--dim);line-height:1.8;margin-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .about p{font-size:14px;line-height:1.95;color:var(--dim);margin-bottom:14px}
+  .about strong{color:var(--cream)}
+  .quote{border-left:3px solid var(--orange);padding-left:18px;color:var(--cream);font-size:17px;line-height:1.9}
+  .contact{border:1px solid var(--line);border-radius:16px;padding:24px;background:rgba(244,239,232,.03)}
+  .contact h3{font-size:18px;margin-bottom:10px}
+  .contact p{font-size:13px;color:var(--dim);line-height:1.9}
+  .contact .kw{color:var(--orange);font-weight:600}
+  footer{padding:34px 0 46px;color:rgba(244,239,232,.36);font-size:12px;letter-spacing:.08em}
+  @media(max-width:900px){.hero-in{grid-template-columns:1fr}.hero-stat{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}.products{grid-template-columns:1fr}.articles{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}}
+  @media(max-width:560px){.nav-links{display:none}.articles{grid-template-columns:1fr}.section{padding:56px 0}.hero{padding:70px 0 60px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap nav-in">
+  <div class="brand"><span class="mark"></span>CREATOR WORKBENCH</div>
+  <div class="nav-links"><a href="#products">产品</a><a href="#articles">文章</a><a href="#about">关于</a><a href="#contact">关注</a></div>
+</div></nav>
+
+<header class="hero"><div class="wrap hero-in">
+  <div>
+    <div class="eyebrow">一个 JAVA 工程师的创作者工作台实验</div>
+    <h1>36岁，我停止<br><span>「学习AI」</span><br>开始用AI做产品</h1>
+    <p class="lead">不卖成功学，只公开自己正在验证的过程、工具和真实数据。这里记录我如何把经验变成内容、把内容变成产品。</p>
+    <div class="actions">
+      <a class="btn primary" href="articles/2026-11-09-stop-learning-ai/index.html">看第一篇 →</a>
+      <a class="btn" href="downloads/creator-workbench-template-v0.1.zip">领取工作台模板</a>
+      <a class="btn" href="downloads/AI落地自查清单-v0.1.pdf">下载 AI 自查清单</a>
+    </div>
+  </div>
+  <div class="hero-stat"><div class="big">30</div><div class="cap">公众号已有发表记录 · 篇</div><div class="hero-stat"><div class="big">6</div><div class="cap">正在整理的内容项目 · 篇</div></div></div>
+</div></header>
+
+<main>
+  <section class="section" id="products"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">产品与工具</h2><span class="section-note">用文件，而不是又一次注册</span></div>
+    <div class="products">
+      <article class="product">
+        <div class="k">PRODUCT 01 · 免费测试版</div>
+        <h3>创作者工作台模板 v0.1</h3>
+        <p>一个文件夹 + 零依赖 Python CLI + 本地看板。包含 39 个示例选题、4 套写作模板、发布检查清单和周复盘模板，复制即可开始写第一篇。</p>
+        <div class="meta"><span class="pill">文件夹</span><span class="pill">CLI</span><span class="pill">本地看板</span><span class="pill">内部测试</span></div>
+        <div class="links"><a href="downloads/creator-workbench-template-v0.1.zip">下载 zip</a></div>
+      </article>
+      <article class="product">
+        <div class="k">PRODUCT 02 · 免费领取</div>
+        <h3>AI 落地自查清单 v0.1</h3>
+        <p>5 个维度、15 个硬问题，判断一个企业 AI 场景能不能做、能不能上线。附评分规则、一票否决项和可打印 PDF。</p>
+        <div class="meta"><span class="pill">4 页 PDF</span><span class="pill">企业 AI</span><span class="pill">可打印</span></div>
+        <div class="links"><a href="downloads/AI落地自查清单-v0.1.pdf">下载 PDF</a></div>
+      </article>
+      <article class="product">
+        <div class="k">SERVICE · 首单可折扣换案例</div>
+        <h3>AI 落地 90 分钟诊断</h3>
+        <p>给中小企业技术负责人的一场诊断会：90 分钟，把「老板要的 AI」拆成一个 90 天内可验收的工程任务。价格假设 499–999 元/次，待验证。</p>
+        <div class="meta"><span class="pill">90 分钟</span><span class="pill">书面报告</span><span class="pill">7 天跟进</span></div>
+        <div class="links"><a href="downloads/AI落地90分钟诊断-服务说明.pdf">看服务说明</a></div>
+      </article>
+    </div>
+  </div></section>
+
+  <section class="section" id="articles"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">正在写的内容</h2><span class="section-note">持续记录，不追爆款</span></div>
+    <div class="articles">
+      <a class="article" href="articles/2026-11-09-stop-learning-ai/index.html"><img src="assets/article-01-cover.png" alt="36岁，我停止「学习AI」"><div class="article-body"><div class="tag">技术人转型</div><h3>36岁，我停止「学习AI」，开始用AI做产品</h3><p>不是不学了，是换一种学法：把 AI 变成一条能交付价值、能收钱的生产线。</p></div></a>
+      <a class="article" href="articles/2026-11-10-side-business-first-article/index.html"><img src="assets/article-02-cover.png" alt="技术人做副业"><div class="article-body"><div class="tag">技术人转型</div><h3>技术人做副业，先别急着做课</h3><p>课程是产品，不是起点。先把一篇文章写出来，验证需求，再决定做什么。</p></div></a>
+      <a class="article" href="articles/2026-11-15-creator-workbench-v01/index.html"><img src="assets/article-03-cover.png" alt="我用一个文件夹管理所有内容"><div class="article-body"><div class="tag">工具与工作台</div><h3>我用一个文件夹，管理所有内容</h3><p>一个 Java 工程师的创作者工作台 v0.1：目录、模板、CLI 和看板。</p></div></a>
+      <a class="article" href="articles/2026-11-18-ai-demo-to-production/index.html"><img src="assets/article-04-cover.png" alt="AI Demo 上线翻车"><div class="article-body"><div class="tag">AI 落地实战</div><h3>为什么你的 AI Demo 很惊艳，上线就翻车</h3><p>Demo 证明模型能做什么，生产证明系统能不能负责。七个断层。</p></div></a>
+      <a class="article" href="articles/2026-11-21-why-tech-articles-flop/index.html"><img src="assets/article-05-cover.png" alt="为什么技术人写的文章没人看"><div class="article-body"><div class="tag">技术人转型</div><h3>为什么技术人写的文章没人看</h3><p>信息密度不等于价值。读者只关心：跟我有关吗、凭什么信你、接下来做什么。</p></div></a>
+      <a class="article" href="articles/2026-11-24-30-tools-workbench/index.html"><img src="assets/article-06-cover.png" alt="30篇工具实测之后"><div class="article-body"><div class="tag">工具与工作台</div><h3>看完 30 篇 AI 工具实测，我为什么开始搭自己的内容工作台</h3><p>工具测评解决“要不要用”，内容工作台解决“怎么持续产出”。</p></div></a>
+    </div>
+  </div></section>
+
+  <section class="section" id="about"><div class="wrap about">
+    <div>
+      <div class="section-head"><h2 class="section-title">关于我</h2></div>
+      <p><strong>一个 36 岁的 Java 工程师。</strong> 做过企业级系统的研发和运维，长期关注 AI，正在从“学习者”转向“用 AI 做产品的人”。</p>
+      <p>这个站点记录三件事：<strong>AI 落地、技术人转型、创作者工作台</strong>。不写成功学，不承诺涨粉，只公开自己正在验证的过程、工具和真实数据。</p>
+    </div>
+    <div class="quote">“模型负责聪明，工程师负责可靠。<br>我想做那个把 AI 接进真实业务的人。”</div>
+  </div></section>
+
+  <section class="section" id="contact"><div class="wrap">
+    <div class="contact">
+      <h3>关注公众号：行而知而行</h3>
+      <p>这里会持续更新 AI 落地、技术人转型和创作者工作台实验。<br>回复 <span class="kw">「清单」</span> 领取《AI 落地自查清单 v0.1》；回复 <span class="kw">「工作台」</span> 领取《创作者工作台模板 v0.1》。</p>
+      <p style="margin-top:12px;font-size:11px;opacity:.7">注：关键词自动回复需先在公众号后台配置；当前页面为本地预览。</p>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">CREATOR WORKBENCH · 2026 · 一个普通技术人的长期实验</div></footer>
+</body>
+</html>
